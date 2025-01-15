@@ -1,0 +1,37 @@
+.setup {
+  background-color: #e2e9f4;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 100vh;
+  width: 100%;
+  margin-left: 5px;
+}
+
+.title {
+  background-color: rgb(154, 186, 245);
+  width: 100%;
+}
+
+/* Eye icon positioning */
+.eye-icon {
+  position: absolute;
+  right: 10px; /* Position the icon close to the right edge */
+  top: 50%; /* Center vertically */
+  transform: translateY(-50%);
+  cursor: pointer; /* Make it clickable */
+  z-index: 10; /* Ensure it is always on top */
+  color: #6c757d; /* Neutral color */
+}
+
+/* Prevent input text from overlapping the icon */
+.input-group .form-control {
+  padding-right: 40px; /* Add space for the eye icon */
+  z-index: 1; /* Ensure input does not overlap the icon */
+  position: relative; /* Keep its context in the input group */
+}
+
+/* Optional: Hover effect for better UX */
+.eye-icon:hover {
+  color: #000; /* Highlight the icon on hover */
+}
