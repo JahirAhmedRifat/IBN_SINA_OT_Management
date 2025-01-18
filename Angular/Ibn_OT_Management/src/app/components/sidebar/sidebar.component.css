@@ -1,4 +1,4 @@
-/* Basics */
+/* design ta thik moto jano thake, tar jonna */
 * {
 	margin: 0;
 	padding: 0;
@@ -11,8 +11,9 @@ body {
 	background-color: #F5F6F8;
 	overflow: hidden;
 }
+/* ------------------------------ */
 
-/* Sidebar Navigation */
+/*  ata upor er navbar er width, height */
 .sidebar-navigation {
 	display: inline-block;
 	min-height: 20vh;
@@ -22,6 +23,7 @@ body {
 	/* border-radius: 10% */
 }
 
+/*  ata nicher er navbar er width, height */
 .navSet{
 	min-height: 5vh; 
 	width: 70px;
@@ -83,31 +85,33 @@ body {
 	opacity: 1;
 }
 
-.sidebar-navigation ul li.active {
+
+/* .sidebar-navigation ul li.active {
 	background-color: #6983e1;
-}
+} 
 
-.sidebar-navigation ul li.active i {
+ .sidebar-navigation ul li.active i {
 	color: #255060;
-}
+} */
+ 
 
+/* ata icon er border circle kora */
 .iconlink{
 	border-radius: 50%;
 	background-color: white;
 }
+
+/* font awesome er icon style */
 .custom_icon{
 	font-size: 39px;
 }
 
+/* active color icon set  */
 .activeColor{
     background-color: #5369b9;
 	color:white ;
 }
 
-.logout ul li:hover {
-	background-color:red;
-	color:white ;
-}
 
 
   

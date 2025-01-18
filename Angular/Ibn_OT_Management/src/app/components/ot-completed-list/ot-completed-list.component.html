@@ -9,12 +9,12 @@
         <div class="col-6">
             <div class="row text-center">
                 <div class="col-5">
-                    <input type="date" class="form-control from"  name="fromDate" [(ngModel)]="fromDate">
+                    <input type="date" class="form-control from" name="fromDate" [(ngModel)]="fromDate">
                 </div>
                 <div class="col-5">
-                    <input type="date" class="form-control to"  name="toDate" [(ngModel)]="toDate">
+                    <input type="date" class="form-control to" name="toDate" [(ngModel)]="toDate">
                 </div>
-                <div  class="col-2">
+                <div class="col-2">
                     <button type="submit" class="btn fw-bolder text-light px-3" (click)="searchData()">Search</button>
                 </div>
 
@@ -40,14 +40,14 @@
                     <td>{{srNo+1}}</td>
                     <td>
                         @if(item.gender == "Female"){
-                            <i class="bi bi-gender-female text-danger"></i> {{item.patientName}}<br>
-                            <span class="age">{{item.age}} years</span>
+                        <i class="bi bi-gender-female text-danger"></i> {{item.patientName}}<br>
+                        <span class="age">{{item.age}} years</span>
                         }@else if (item.gender == "Male") {
-                            <i class="bi bi-gender-male text-primary"></i> {{item.patientName}}<br>
-                            <span class="age">{{item.age}} years</span>
+                        <i class="bi bi-gender-male text-primary"></i> {{item.patientName}}<br>
+                        <span class="age">{{item.age}} years</span>
                         }@else{
-                            {{item.patientName}}<br>
-                            <span class="age">{{item.age}} years</span>
+                        {{item.patientName}}<br>
+                        <span class="age">{{item.age}} years</span>
                         }
                     </td>
                     <td>{{item.surgeonName}}</td>

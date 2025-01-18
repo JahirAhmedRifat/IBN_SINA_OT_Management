@@ -21,8 +21,8 @@
             <div>
                 <form #form="ngForm">
                     <div class="mb-3">
-                        <input type="text" name="userName" #uName="ngModel" [(ngModel)]="username"
-                            class="form-control" placeholder="User Name/Email" required />
+                        <input type="text" name="userName" #uName="ngModel" [(ngModel)]="username" class="form-control"
+                            placeholder="User Name/Email" required />
                         <div class="text-danger">
                             @if((uName.touched || uName.dirty) && uName.errors?.['required']){
                             <span>Please Enter</span>
@@ -30,22 +30,23 @@
                         </div>
                     </div>
                     <div class="mb-1 input-group position-relative">
-                        <input  [type]="isPasswordVisible ? 'text' : 'password'" name="password" #uPassword="ngModel" [(ngModel)]="password"
-                            class="form-control" placeholder="Enter Password" required />
-                            <span class="position-absolute eye-icon" (click)="togglePasswordVisibility()">
+                        <input [type]="isPasswordVisible ? 'text' : 'password'" name="password" #uPassword="ngModel"
+                            [(ngModel)]="password" class="form-control" placeholder="Enter Password" required />
+                        <span class="position-absolute eye-icon" (click)="togglePasswordVisibility()">
                             <i class="bi" [ngClass]="isPasswordVisible ? 'bi-eye-slash' : 'bi-eye'"></i>
-                          </span>
+                        </span>
                     </div>
                     <div class="mb-3 text-danger">
                         @if((uPassword.touched || uPassword.dirty) && uPassword.errors?.['required']){
                         <span>Please Enter Password</span>
                         }
                     </div>
-                    <button type="button" class="btn btn-primary btn-sm d-block px-5" [disabled]="form.invalid"  (click)="onLogin()">
+                    <button type="button" class="btn btn-primary btn-sm d-block px-5" [disabled]="form.invalid"
+                        (click)="onLogin()">
                         Login
                     </button>
                 </form>
-            </div>          
+            </div>
         </div>
 
         <div class="col-md-7"></div>
